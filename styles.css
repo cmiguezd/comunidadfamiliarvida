@@ -32,7 +32,7 @@ body {
 }
 
 .nav {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
     display: flex;
     flex-direction: row;
@@ -40,7 +40,17 @@ body {
     justify-content: space-between;
     padding: 0 3%;
     position: relative;
+}
 
+.hamburger {
+    display: flex;
+    position: relative;
+    color: white;
+    scale: 150%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 27px 0;
+    margin: 0;
 }
 
 .nav-link {
@@ -63,6 +73,7 @@ body {
     width: 10%;
     transition: scale .3s;
     transition: opacity .3s;
+    min-width: 100px;
 }
 
 .nav-logo:hover {
@@ -79,11 +90,10 @@ body {
 
 .menu {
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    font-size: 12px;
-    list-style-type: none;
+    font-size: 1em;
+    list-style: none;
     padding: 20px 0;
+
 }
 
 .central-page {
@@ -105,7 +115,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 45px;
+    font-size: 4em;
     color: white;
     text-transform: uppercase;
 }
@@ -216,7 +226,7 @@ body {
 }
 
 .ult-serie {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 300;
     color: #ffffff;
     margin: 0;
@@ -224,7 +234,7 @@ body {
 
 .title-serie {
     font-family: 'Unbounded', cursive;
-    font-size: 32px;
+    font-size: 3em;
     color: #ffffff;
     margin-bottom: 40px;
     margin-top: 10px;
@@ -334,7 +344,7 @@ body {
 }
 
 .ult-podcast {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 300;
     color: #ffffff;
     margin: 0;
@@ -342,7 +352,7 @@ body {
 
 .title-podcast {
     font-family: 'Unbounded', cursive;
-    font-size: 32px;
+    font-size: 3em;
     color: #ffffff;
     margin-bottom: 40px;
     margin-top: 10px;
@@ -409,14 +419,16 @@ body {
 .div-title-unete {
 
     font-family: 'Unbounded', cursive;
-    font-size: 25px;
+    padding-right: 50px;
+    font-size: 2em;
     color: #ffffff;
     width: 35%;
     margin-left: 80px;
 }
 
 .div-subtitle-unete {
-    font-size: 15px;
+    font-size: 1.2em;
+    padding-right: 20px;
     color: #ffffff;
     width: 30%;
 
@@ -500,7 +512,7 @@ body {
 .div-title-playlist {
 
     font-family: 'Unbounded', cursive;
-    font-size: 25px;
+    font-size: 2em;
     color: #ffffff;
     width: 50%;
     margin-left: 40px;
@@ -580,7 +592,6 @@ body {
 }
 
 .icon {
-    weight: 20px;
     height: 20px;
     margin-right: 10px;
 
@@ -591,7 +602,7 @@ body {
     flex-direction: column;
     width: 400px;
     margin: 50px;
-    font-size: 15px;
+    font-size: 1.2em
 }
 
 
@@ -627,7 +638,7 @@ body {
 .div-title-asistir {
 
     font-family: 'Unbounded', cursive;
-    font-size: 25px;
+    font-size: 2em;
     color: #ffffff;
     width: 50%;
     margin-left: 40px;
@@ -666,7 +677,6 @@ body {
 }
 
 .icon {
-    weight: 20px;
     height: 20px;
     margin-right: 10px;
 }
@@ -676,15 +686,15 @@ body {
     flex-direction: column;
     width: 400px;
     margin: 50px;
-    font-size: 15px;
+    font-size: 1.2em;
 }
 
 /* SECCION DONACIONES */
 
 .donaciones {
-    padding: 0px;
+    padding: 20px 0;
     margin-top: 0px;
-    width: 80%;
+    width: 90%;
     height: 50vh;
     background-color: black;
     display: flex;
@@ -695,6 +705,7 @@ body {
 
 .text-donaciones {
     width: 50vw;
+    padding-right: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -706,7 +717,7 @@ body {
 .div-title-donaciones {
 
     font-family: 'Unbounded', cursive;
-    font-size: 25px;
+    font-size: 2em;
     color: #ffffff;
     width: 90%;
 }
@@ -731,7 +742,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .boton-pse:hover {
@@ -753,13 +764,13 @@ p {
 }
 
 .text-donaciones-p {
-    font-size: 15px;
+    font-size: 1.3em;
     font-weight: 300;
 
 }
 
 .text-fotos {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -773,7 +784,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -781,27 +792,27 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .div-ubicacion {
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
-.logo-footer{
+.logo-footer {
     width: 150px;
     padding-bottom: 5px;
 }
 
-.text-footer{
+.text-footer {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
 
-.text-direccion{
+.text-direccion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -821,11 +832,11 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.direccion{
+.direccion {
     padding-right: 5px;
 }
 
-.como-llegar{
+.como-llegar {
     padding-left: 5px;
 }
 
@@ -835,9 +846,8 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 8px;
+    font-size: 1em;
     opacity: 100%;
-    font-size: 12px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -847,7 +857,7 @@ p {
     transition: background-color .3s;
 }
 
-.botones-footer{
+.botones-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -866,12 +876,12 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 10px;
-    padding:0 3px;
+    font-size: 1em;
+    padding: 0 3px;
 }
 
 .boton-pse-footer:hover {
-    color:black;
+    color: black;
     background-color: white;
     transition: background-color .3s;
 }
@@ -898,12 +908,12 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 10px;
-    padding:0 3px;
+    font-size: 1em;
+    padding: 0 3px;
 }
 
 .boton-aprende-como-footer:hover {
-    color:black;
+    color: black;
     background-color: white;
     transition: background-color .3s;
 }
@@ -917,18 +927,18 @@ p {
     transition: scale .3s;
 }
 
-.boton1-footer{
+.boton1-footer {
     margin-right: 30px;
 }
 
-.redes-sociales{
+.redes-sociales {
     display: flex;
     flex-direction: row;
     align-items: center;
 
 }
 
-.logo-rrss{
+.logo-rrss {
     width: 25px;
     height: 25px;
     margin: 5px;
@@ -941,7 +951,7 @@ p {
     padding: 5px;
 }
 
-.logo-rrss:hover{
+.logo-rrss:hover {
     background: rgb(0, 134, 189);
     background: linear-gradient(135deg, rgba(0, 134, 189, 0.6026785714285714) 0%, rgba(0, 93, 0, 0.5970763305322129) 100%);
     transition: background-color .3s;
@@ -950,7 +960,7 @@ p {
 }
 
 
-.img-rrss{
+.img-rrss {
     width: 100%;
     scale: 80%;
 }
@@ -958,16 +968,17 @@ p {
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
 
 body::-webkit-scrollbar {
-    -webkit-appearance:none;
+    -webkit-appearance: none;
 }
 
 body::-webkit-scrollbar:vertical {
-    width:8px;
+    width: 8px;
 }
 
-body::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
     display: none;
-} 
+}
 
 body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.3);
@@ -981,10 +992,163 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 20px;
     border: 0px solid #f1f2f3;
-    
+
 }
 
 body::-webkit-scrollbar-track {
-    border-radius: 10px;  
+    border-radius: 10px;
 }
 
+/* RESPONSIVE */
+
+@media (min-width: 861px) {
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+
+    }
+}
+
+@media (max-width: 860px) {
+
+    .menu {
+        display: none;
+        position: relative;
+        max-height: 0;
+        transition: max-height 1s ease-out;
+
+
+    }
+
+    .hamburger:hover {
+        opacity: 75%;
+        transition: opacity 0.5s;
+
+    }
+
+    .menu.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 66px;
+        width: 90%;
+        z-index: 1;
+        padding: 20px;
+        align-items: center;
+        max-height: 500px;
+        transition: max-height 1s ease-out;
+        border-radius: 0 0 20px 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+
+    }
+
+    .menu.open li {
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+    .nav-link {
+        padding: 3px 0px;
+    }
+
+    .botones-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+}
+
+@media (max-width: 780px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .ult-serie,
+    .ult-podcast {
+        font-size: 1.5em;
+    }
+
+    .title-serie,
+    .title-podcast {
+        font-size: 2em;
+    }
+
+    .text-unete,
+    .text-playlist,
+    .text-asistir,
+    .text-donaciones {
+        font-size: 0.85em;
+    }
+
+    .p-footer {
+        flex-direction: column;
+    }
+
+    .como-llegar {
+        padding: 0;
+    }
+
+    .boton-pse {
+        font-size: 1em;
+    }
+
+    .div-boton-pse:hover {
+        scale: 105%
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .boton-pse-footer,
+    .boton-aprende-como-footer {
+        padding-left: 15px;
+        justify-content: flex-start;
+        width: 200px;
+    }
+
+    .unete,
+    .text-unete,
+    .playlist,
+    .text-playlist,
+    .asistir,
+    .text-asistir,
+    .donaciones {
+        height: 25vh;
+    }
+
+    .ult-serie,
+    .ult-podcast {
+        font-size: 0.75em;
+    }
+
+    .title-serie,
+    .title-podcast {
+        font-size: 1em;
+    }
+
+    .boton-ver-ahora {
+        font-size: 0.75em;
+    }
+
+    .boton-escuchar-ahora {
+        font-size: 0.5em;
+    }
+
+    .text-unete,
+    .text-playlist,
+    .text-asistir,
+    .text-donaciones {
+        font-size: 0.5em;
+    }
+
+    .botones-footer {
+        display: none;
+    }
+}
