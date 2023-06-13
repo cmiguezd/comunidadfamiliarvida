@@ -704,7 +704,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-evenly;
 }
 
 .text-donaciones {
@@ -713,7 +713,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -1114,72 +1114,111 @@ body::-webkit-scrollbar-track {
 }
 
 @media (max-width: 600px) {
-    .title {
-        font-size: 2em;
-    }
-
-    .boton-pse-footer,
-    .boton-aprende-como-footer {
-        padding-left: 15px;
-        justify-content: flex-start;
-        width: 200px;
-    }
-
-    .unete,
-    .text-unete,
-    .playlist,
-    .text-playlist,
-    .asistir,
-    .text-asistir,
-    .donaciones {
-        height: 25vh;
-    }
-
-    .icon-pse {
-        height: 30px;
-    }
-
-    .boton-aprende-como {
-        width: 100px;
-        height: 40px;
-    }
-
-    .ult-serie,
-    .ult-podcast {
-        font-size: 0.75em;
-        overflow: hidden;
-    }
-
-    .title-serie,
-    .title-podcast {
-        font-size: 1em;
-    }
-
-    .boton-ver-ahora {
-        font-size: 0.75em;
-    }
-
-    .boton-escuchar-ahora {
-        font-size: 0.5em;
-    }
-
-    .text-unete,
-    .text-playlist,
-    .text-asistir,
-    .text-donaciones {
-        font-size: 0.5em;
-
-    }
-
-    .botones-footer {
-        display: none;
-    }
-
-}
-
-@media (max-width: 430px) {
     body {
         overflow-x: hidden;
-        /* Evita el desplazamiento horizontal */
     }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .div-boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .div-boton-playlist, .div-boton-conocer {
+        margin-top: 30px;
+    }
+
+    .serie, .podcast{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div-serie, .div-podcast{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img-serie, .div-img-podcast{
+        width: 200px;
+        align-items: center;
+    }
+
+    .img-serie, .img-podcast{
+        align-items: center;
+    }
+
+    .div-text-serie, .div-text-podcast{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ult-serie, .ult.podcast{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-serie, .title-podcast{
+        margin-bottom: 20px;
+    }
+
+    .text-unete, .text-playlist, .text-asistir, .text-donaciones, .div-footer, .ubicacion, .text-footer, .text-direccion, .p-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    .div-boton-spotify{
+        margin: 10px;
+    }
+
+    .div-title-unete, .div-subtitle-unete, .div-title-playlist, .div-title-asistir, .div-title-donaciones{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .botones-playlist{
+        margin: 0;
+        align-items: center;
+    }
+
+    .text-donaciones{
+        width:100%;
+        padding: 0;
+    }
+
+.donaciones{
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+}
+
+    .boton-aprende-como, .boton-spotify, .boton-youtube, .botones-asistir, .boton-pse, .botones-footer, .div-boton-pse-footer, .div-boton-aprende-como-footer{
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .div-boton-pse-footer, .div-boton-aprende-como-footer{
+    padding: 10px 0;
+    }
+
+
 }
