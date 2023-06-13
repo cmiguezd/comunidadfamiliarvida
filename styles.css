@@ -4,6 +4,11 @@
     src: url("./fonts/BrasikaDisplay.woff2") format('woff2')
 }
 
+* {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
 a {
     font-family: 'Unbounded', cursive;
 }
@@ -19,6 +24,7 @@ body {
     font-size: 0.75em;
     background-color: rgba(0, 0, 0, 1);
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* SECCION NAV */
@@ -423,16 +429,14 @@ body {
     font-size: 2em;
     color: #ffffff;
     width: 35%;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .div-subtitle-unete {
     font-size: 1.2em;
-    padding-right: 20px;
+    padding-right: 10px;
     color: #ffffff;
     width: 30%;
-
-
 }
 
 .subtitle-unete {
@@ -1077,11 +1081,19 @@ body::-webkit-scrollbar-track {
         font-size: 2em;
     }
 
+    .title-unete,
+    .title-playlist,
+    .title-asistir,
+    .title-donaciones {
+        overflow: hidden;
+    }
+
     .text-unete,
     .text-playlist,
     .text-asistir,
     .text-donaciones {
         font-size: 0.85em;
+        overflow: hidden;
     }
 
     .p-footer {
@@ -1123,9 +1135,19 @@ body::-webkit-scrollbar-track {
         height: 25vh;
     }
 
+    .icon-pse {
+        height: 30px;
+    }
+
+    .boton-aprende-como {
+        width: 100px;
+        height: 40px;
+    }
+
     .ult-serie,
     .ult-podcast {
         font-size: 0.75em;
+        overflow: hidden;
     }
 
     .title-serie,
@@ -1146,9 +1168,18 @@ body::-webkit-scrollbar-track {
     .text-asistir,
     .text-donaciones {
         font-size: 0.5em;
+
     }
 
     .botones-footer {
         display: none;
+    }
+
+}
+
+@media (max-width: 430px) {
+    body {
+        overflow-x: hidden;
+        /* Evita el desplazamiento horizontal */
     }
 }
